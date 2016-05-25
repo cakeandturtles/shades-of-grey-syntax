@@ -56,16 +56,24 @@
 
   .is-focused {
       .line.cursor-line {
-          background: white;
+          background-color: white;
       }
+  }
+
+  .line > * {
+      z-index: 2;
+      position: relative;
+      left: 0px;
+      top: 0px;
   }
 }
 
 .bracket-matcher {
     border-bottom: 1px solid lime;
     position: absolute;
-    border: 1px solid white;
-    background-color: white;
+    border: 1px solid lime;
+    background-color: lime;
+    z-index: 1;
 }
 
 .editor .search-results .marker .region {
